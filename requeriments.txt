@@ -1,0 +1,9 @@
+playwright
+pandas
+numpy
+requests
+bs4
+prefect
+xlrd
+openpyxl
+pyodbc

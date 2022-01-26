@@ -1,0 +1,97 @@
+[
+{
+    "countryID" : "ARG",
+    "countryName" : "República Argentina",
+    "countryRegion" : "419"
+},
+{
+    "countryID" : "BOL",
+    "countryName": "Estado Plurinacional de Bolivia",
+    "countryRegion" : "419"
+},
+{
+    "countryID" : "BRA",
+    "countryName": "República Federativa de Brazil",
+    "countryRegion" : "419"
+},
+{
+    "countryID" : "CHL",
+    "countryName": "República de Chile",
+    "countryRegion" : "419"
+},
+{
+    "countryID" : "COL",
+    "countryName": "República de Colombia",
+    "countryRegion" : "419"
+},
+{
+    "countryID" : "CRI",
+    "countryName": "República de Costa Rica",
+    "countryRegion" : "419"
+},
+{
+    "countryID" : "DOM",
+    "countryName": "República Dominicana",
+    "countryRegion" : "419"
+},
+{
+    "countryID" : "ECU",
+    "countryName": "República de Ecuador",
+    "countryRegion" : "419"
+},
+{
+    "countryID" : "GTM",
+    "countryName": "República de Guatemala",
+    "countryRegion" : "419"
+},
+{
+    "countryID" : "HND",
+    "countryName": "República de Honduras",
+    "countryRegion" : "419"
+},
+{
+    "countryID" : "JAM",
+    "countryName": "Jamaica",
+    "countryRegion" : "419"
+},
+{
+    "countryID" : "MEX",
+    "countryName": "Estados Unidos Mexicanos",
+    "countryRegion" : "419"
+},
+{
+    "countryID" : "NIC",
+    "countryName": "República de Nicaragua",
+    "countryRegion" : "419"
+},
+{
+    "countryID" : "PAN",
+    "countryName": "República de Panamá",
+    "countryRegion" : "419"
+},
+{
+    "countryID" : "PER",
+    "countryName": "República del Perú",
+    "countryRegion" : "419"
+},
+{
+    "countryID" : "PRY",
+    "countryName": "República del Paraguay",
+    "countryRegion" : "419"
+},
+{
+    "countryID" : "SLV",
+    "countryName": "República de El Salvador",
+    "countryRegion" : "419"
+},
+{
+    "countryID" : "URY",
+    "countryName": "República Oriental del Uruguay",
+    "countryRegion" : "419"
+},
+{
+    "countryID" : "VEN",
+    "countryName": "República Bolivariana de Venezuela",
+    "countryRegion" : "419"
+}
+]
