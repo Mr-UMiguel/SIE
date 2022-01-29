@@ -1,5 +1,5 @@
 {
     "root_path" : "D:/Documents/Miguel/FLAR/SIE",
-    "extract_path": "D:/Documents/Miguel/FLAR/SIE/EXTRACT-DB",
-    "transform_path": "D:/Documents/Miguel/FLAR/SIE/TRANSFORM-DB"
+    "extract_path": "D:/Documents/Miguel/FLAR/SIE/EXTRACT",
+    "transform_path": "D:/Documents/Miguel/FLAR/SIE/TRANSFORM"
 }
