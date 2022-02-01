@@ -4,8 +4,9 @@ import json
 settings = json.load(open("./settings.json","r"))
 root_path = settings['root_path']
 
+series = json.load(open("./series.json","r"))['SECTOR_REAL']['URY']
 
-def run(playwright, download_path) -> None:
+def e1_01_1(playwright, download_path) -> None:
     browser = playwright.chromium.launch(headless=True)
     context = browser.new_context(accept_downloads=True)
 
@@ -39,3 +40,16 @@ def run(playwright, download_path) -> None:
     browser.close()
 
     return download.suggested_filename
+
+# 1.11.1 Desempleo
+
+def e1_11_1(playwright,download_path) -> None:
+    pass
+
+
+
+from playwright.sync_api import sync_playwright
+
+with sync_playwright() as playwright:
+    e1_01_1(playwright, download_path="D:/Documents/Miguel/FLAR/SIE/EXTRACT/SECTOR_REAL/SLV")
+    e1_11_1(playwright, download_path="D:/Documents/Miguel/FLAR/SIE/EXTRACT/SECTOR_REAL/SLV")

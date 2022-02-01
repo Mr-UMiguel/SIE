@@ -1,11 +1,15 @@
 import json
+from bs4 import BeautifulSoup
+import requests
+import urllib3
 
 
 settings = json.load(open("./settings.json","r"))
 root_path = settings['root_path']
 
+series = json.load(open("./series.json","r"))['SECTOR_REAL']['CHL']
 
-def run(playwright, download_path) -> None:
+def e1_01_1v(playwright, download_path) -> None:
     browser = playwright.chromium.launch(headless=True)
     context = browser.new_context(accept_downloads= True )
 
@@ -55,4 +59,12 @@ def run(playwright, download_path) -> None:
     browser.close()
 
     return download.suggested_filename
+
+
+
+# 1.11.1 Desempleo
+
+def e1_11_1() -> None:
+    pass
+
 

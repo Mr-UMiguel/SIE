@@ -1,0 +1,515 @@
+{
+    "SECTOR_REAL" : {
+        "ARG"  : [
+            {
+                "flarID": "1.01.1",
+                "serieName" : "Producto interno bruto, por categoría de tabulación. Valores trimestrales en millones de pesos a precios de 2004",
+                "serieFreq" : "Quarterly",
+                "serieType" : "",
+                "serieCurrency" : "Local",
+                "serieMultiplicator" : "",
+                "sourceID" : "INDEC",
+                "sourceName" : "Instituto Nacional de Estadística y Censos",
+                "hrefStatic" : "https://www.indec.gob.ar/",
+                "hrefDynamic" : "https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-9-47"
+            },
+            {
+                "flarID" : "1.11.1",
+                "serieName" : "Principales tasas del mercado laboral. Primer trimestre de 2017 a segundo trimestre de 2021. Total 31 aglomerados urbanos",
+                "serieFreq" : "Quarterly",
+                "serieType" : "",
+                "serieCurrency" : "",
+                "serieMultiplicator" : "",
+                "sourceID" : "INDEC",
+                "sourceName" : "Instituto Nacional de Estadística y Censos",
+                "hrefStatic" : "https://www.indec.gob.ar/",
+                "hrefDynamic" : "https://www.indec.gob.ar/indec/web/Nivel4-Tema-4-31-58"
+            }
+        ],
+
+        "BOL" : [
+            {
+                "flarID": "1.01.1",
+                "serieName" : "PRODUCTO INTERNO BRUTO A PRECIOS CONSTANTES POR ACTIVIDAD ECONÓMICA SEGÚN TRIMESTRE, 1990 - 2021",
+                "serieFreq" : "Quarterly",
+                "serieType" : "",
+                "serieCurrency" : "Local",
+                "serieMultiplicator" : "",
+                "sourceID" : "INE",
+                "sourceName" : "Instituto Nacional de Estadística",
+                "hrefStatic" : "https://www.ine.gob.bo/",
+                "hrefDynamic" : "https://www.ine.gob.bo/index.php/estadisticas-economicas/pib-y-cuentas-nacionales/producto-interno-bruto-trimestral/producto-interno-bruto-trimestral-intro/"
+            },
+            {
+                "flarID": "1.11.1",
+                "serieName" : "PRINCIPALES INDICADORES DE EMPLEO POR MES, SEGÚN GRUPO DE DEPARTAMENTOS 2015 - 2021",
+                "serieFreq" : "Monthly",
+                "serieType" : "",
+                "serieCurrency" : "",
+                "serieMultiplicator" : "",
+                "sourceID" : "INE",
+                "sourceName" : "Instituto Nacional de Estadística",
+                "hrefStatic" : "https://www.ine.gob.bo/",
+                "hrefDynamic" : "https://www.ine.gob.bo/index.php/desocupacion/"
+            }
+        ], 
+
+        "BRA" : [
+            {
+                "flarID": "1.01.1",
+                "serieName" : "VALORES ENCADEADOS A PREÇOS DE 1995",
+                "serieFreq" : "Quarterly",
+                "serieType" : "",
+                "serieCurrency" : "Local",
+                "serieMultiplicator" : "",
+                "sourceID" : "IBGE",
+                "sourceName" : "Instituto Brasileiro de Geografia e Estatística",
+                "hrefStatic" : "https://www.ibge.gov.br/pt/inicio.html",
+                "hrefDynamic" : "https://www.ibge.gov.br/estatisticas/economicas/contas-nacionais/9300-contas-nacionais-trimestrais.html?=&t=downloads"
+            },
+            {
+                "flarID": "1.11.1",
+                "serieName" : "Taxa de desocupação",
+                "serieFreq" : "Monthly",
+                "serieType" : "",
+                "serieCurrency" : "",
+                "serieMultiplicator" : "",
+                "sourceID" : "IBGE",
+                "sourceName" : "Instituto Brasileiro de Geografia e Estatística",
+                "hrefStatic" : "https://www.ibge.gov.br/pt/inicio.html",
+                "hrefDynamic" : "https://www.ibge.gov.br/estatisticas/sociais/trabalho/9171-pesquisa-nacional-por-amostra-de-domicilios-continua-mensal.html?=&t=series-historicas"
+            }
+        ],
+
+        "CHL" : [
+            {
+                "flarID": "1.01.1",
+                "serieName" : "Indicadores macroeconómicos trimestrales, referencia 2013",
+                "serieFreq" : "Quarterly",
+                "serieType" : "",
+                "serieCurrency" : "Local",
+                "serieMultiplicator" : "",
+                "sourceID" : "Banco Central de Chile",
+                "sourceName" : "Banco Central de Chile",
+                "hrefStatic" : "https://si3.bcentral.cl/Siete",
+                "hrefDynamic" : "https://si3.bcentral.cl/Siete/ES/Siete/Cuadro/CAP_CCNN/MN_CCNN76/CCNN2013_P0_V2"
+            },
+            {
+                "flarID": "1.11.1",
+                "serieName" : "Tasas de desocupación, nacional y por región, INE (porcentaje)",
+                "serieFreq" : "Monthly",
+                "serieType" : "",
+                "serieCurrency" : "",
+                "serieMultiplicator" : "",
+                "sourceID" : "Banco Central de Chile",
+                "sourceName" : "Banco Central de Chile",
+                "hrefStatic" : "https://si3.bcentral.cl/Siete",
+                "hrefDynamic" : "https://si3.bcentral.cl/Siete/ES/Siete/Cuadro/CAP_CCNN/MN_CCNN76/CCNN2013_P0_V2"
+            }
+        ],
+
+        "COL" : [
+            {
+                "flarID": "1.01.1",
+                "serieName" : "Producto Interno Bruto desde el enfoque de la producción Series encadenadas de volumen con año de referencia 2015",
+                "serieFreq" : "Quarterly",
+                "serieType" : "",
+                "serieCurrency" : "Local",
+                "serieMultiplicator" : "",
+                "sourceID" : "DANE",
+                "sourceName" : "Departamento Administrativo Nacional de Estadística",
+                "hrefStatic" : "https://www.dane.gov.co/index.php",
+                "hrefDynamic" : "https://www.dane.gov.co/index.php/estadisticas-por-tema/cuentas-nacionales/cuentas-nacionales-trimestrales/pib-informacion-tecnica"
+            },
+            {
+                "flarID": "1.11.1",
+                "serieName" : "GEIH - Tasa de Desempleo",
+                "serieFreq" : "Monthly",
+                "serieType" : "",
+                "serieCurrency" : "",
+                "serieMultiplicator" : "",
+                "sourceID" : "DANE",
+                "sourceName" : "Departamento Administrativo Nacional de Estadística",
+                "hrefStatic" : "https://www.dane.gov.co/index.php",
+                "hrefDynamic" : "https://www.dane.gov.co/index.php/estadisticas-por-tema/mercado-laboral/empleo-y-desempleo"
+            }
+        ],
+
+        "CRI" : [
+            {
+                "flarID": "1.01.1",
+                "serieName" : "Producto Interno Bruto y Componentes del Gasto",
+                "serieFreq" : "Quarterly",
+                "serieType" : "",
+                "serieCurrency" : "Local",
+                "serieMultiplicator" : "",
+                "sourceID" : "BCCR",
+                "sourceName" : "Banco Central de Costa Rica",
+                "hrefStatic" : "https://www.bccr.fi.cr/SitePages/Inicio.aspx",
+                "hrefDynamic" : "https://gee.bccr.fi.cr/indicadoreseconomicos/Cuadros/frmVerCatCuadro.aspx?idioma=1&CodCuadro=%205504"
+            },
+            {
+                "flarID": "1.11.1",
+                "serieName" : "GEIH - Tasa de Desempleo",
+                "serieFreq" : "Monthly",
+                "serieType" : "",
+                "serieCurrency" : "",
+                "serieMultiplicator" : "",
+                "sourceID" : "BCCR",
+                "sourceName" : "Banco Central de Costa Rica",
+                "hrefStatic" : "https://www.bccr.fi.cr/SitePages/Inicio.aspx",
+                "hrefDynamic" : "https://gee.bccr.fi.cr/indicadoreseconomicos/Cuadros/frmVerCatCuadro.aspx?idioma=1&CodCuadro=%205504"
+            }
+        ],
+
+        "DOM" : [
+            {
+                "flarID": "1.01.1",
+                "serieName" : "PRODUCTO INTERNO BRUTO (PIB)",
+                "serieFreq" : "Quarterly",
+                "serieType" : "",
+                "serieCurrency" : "Local",
+                "serieMultiplicator" : "",
+                "sourceID" : "Banco Central de RD",
+                "sourceName" : "Banco Central de República Dominicana",
+                "hrefStatic" : "https://www.bancentral.gov.do/",
+                "hrefDynamic" : "https://www.bancentral.gov.do/a/d/2533-sector-real"},
+            {
+                "flarID": "1.11.1",
+                "serieName" : "GEIH - Tasa de Desempleo",
+                "serieFreq" : "Monthly",
+                "serieType" : "",
+                "serieCurrency" : "",
+                "serieMultiplicator" : "",
+                "sourceID" : "Banco Central de RD",
+                "sourceName" : "Banco Central de República Dominicana",
+                "hrefStatic" : "https://www.bancentral.gov.do/",
+                "hrefDynamic" : "https://www.bancentral.gov.do/a/d/2541-encuesta-continua-encft"
+            }
+        ],
+
+        "ECU" : [
+            {
+                "flarID": "",
+                "serieName" : "",
+                "serieFreq" : "",
+                "serieType" : "",
+                "serieCurrency" : "",
+                "serieMultiplicator" : "",
+                "sourceID" : "",
+                "sourceName" : "",
+                "hrefStatic" : "",
+                "hrefDynamic" : ""
+            },
+            {
+                "flarID": "",
+                "serieName" : "",
+                "serieFreq" : "",
+                "serieType" : "",
+                "serieCurrency" : "",
+                "serieMultiplicator" : "",
+                "sourceID" : "",
+                "sourceName" : "",
+                "hrefStatic" : "",
+                "hrefDynamic" : ""
+            }
+        ],
+
+        "GTM" : [
+            {
+                "flarID": "1.01.1",
+                "serieName" : "PRODUCTO INTERNO BRUTO TRIMESTRAL (PIBT), MEDIDO POR EL ORIGEN DE LA PRODUCCIÓN",
+                "serieFreq" : "Quarterly",
+                "serieType" : "",
+                "serieCurrency" : "Local",
+                "serieMultiplicator" : "",
+                "sourceID" : "BANGUAT",
+                "sourceName" : "Banco de Guatemala",
+                "hrefStatic" : "https://www.banguat.gob.gt/",
+                "hrefDynamic" : "https://www.banguat.gob.gt/es/page/sistema-de-cuentas-nacionales-trimestrales-ano-de-referencia-2013"
+            },
+            {
+                "flarID": "1.11.1",
+                "serieName" : "Tasa de desempleo Abierto por Dominio",
+                "serieFreq" : "Annual",
+                "serieType" : "",
+                "serieCurrency" : "",
+                "serieMultiplicator" : "",
+                "sourceID" : "BANGUAT",
+                "sourceName" : "Banco de Guatemala",
+                "hrefStatic" : "https://www.banguat.gob.gt/",
+                "hrefDynamic" : "https://www.ine.gob.gt/ine/encuesta-nacional-de-empleo-e-ingresos/"
+            }
+        ],
+
+        "HND" : [
+            {
+                "flarID": "1.01.1",
+                "serieName" : "",
+                "serieFreq" : "",
+                "serieType" : "",
+                "serieCurrency" : "",
+                "serieMultiplicator" : "",
+                "sourceID" : "",
+                "sourceName" : "",
+                "hrefStatic" : "",
+                "hrefDynamic" : ""
+            },
+            {
+                "flarID": "",
+                "serieName" : "",
+                "serieFreq" : "",
+                "serieType" : "",
+                "serieCurrency" : "",
+                "serieMultiplicator" : "",
+                "sourceID" : "",
+                "sourceName" : "",
+                "hrefStatic" : "",
+                "hrefDynamic" : ""
+            }
+        ],
+
+        "JAM" : [
+            {
+                "flarID": "1.01.1",
+                "serieName" : "",
+                "serieFreq" : "",
+                "serieType" : "",
+                "serieCurrency" : "",
+                "serieMultiplicator" : "",
+                "sourceID" : "",
+                "sourceName" : "",
+                "hrefStatic" : "",
+                "hrefDynamic" : ""
+            },
+            {
+                "flarID": "",
+                "serieName" : "",
+                "serieFreq" : "",
+                "serieType" : "",
+                "serieCurrency" : "",
+                "serieMultiplicator" : "",
+                "sourceID" : "",
+                "sourceName" : "",
+                "hrefStatic" : "",
+                "hrefDynamic" : ""
+            }
+        ],
+
+        "MEX" : [
+            {
+                "flarID": "1.01.1",
+                "serieName" : "Producto Interno Bruto Trimestral",
+                "serieFreq" : "Quarterly",
+                "serieType" : "",
+                "serieCurrency" : "Local",
+                "serieMultiplicator" : "",
+                "sourceID" : "INEGI",
+                "sourceName" : "Instituto Nacional de Estadística y Geografía",
+                "hrefStatic" : "https://www.inegi.org.mx/",
+                "hrefDynamic" : "https://www.inegi.org.mx/temas/pib/default.html#Tabulados"
+            },
+            {
+                "flarID": "1.11.1",
+                "serieName" : "Tasa de desocupación",
+                "serieFreq" : "Monthly",
+                "serieType" : "",
+                "serieCurrency" : "",
+                "serieMultiplicator" : "",
+                "sourceID" : "INEGI",
+                "sourceName" : "Instituto Nacional de Estadística y Geografía",
+                "hrefStatic" : "https://www.inegi.org.mx/",
+                "hrefDynamic" : "https://www.inegi.org.mx/temas/empleo/"
+            }
+        ],
+
+        "NIC" : [
+            {
+                "flarID": "1.01.1",
+                "serieName" : "Producto Interno Bruto Trimestral",
+                "serieFreq" : "Quarterly",
+                "serieType" : "",
+                "serieCurrency" : "Local",
+                "serieMultiplicator" : "",
+                "sourceID" : "BCN",
+                "sourceName" : "Banco Central de Nicaragua",
+                "hrefStatic" : "https://www.bcn.gob.ni/",
+                "hrefDynamic" : "https://bcn.gob.ni/cuentas-nacionales-trimestrales"
+            },
+            {
+                "flarID": "1.11.1",
+                "serieName" : "Tasa de desempleo abierto",
+                "serieFreq" : "Quarterly",
+                "serieType" : "",
+                "serieCurrency" : "",
+                "serieMultiplicator" : "",
+                "sourceID" : "BCN",
+                "sourceName" : "Banco Central de Nicaragua",
+                "hrefStatic" : "https://www.bcn.gob.ni/",
+                "hrefDynamic" : ""
+            }
+        ],
+
+        "PAN" : [
+            {
+                "flarID": "1.01.1",
+                "serieName" : "Producto Interno Bruto Trimestral",
+                "serieFreq" : "Quarterly",
+                "serieType" : "",
+                "serieCurrency" : "Local",
+                "serieMultiplicator" : "",
+                "sourceID" : "INEC",
+                "sourceName" : "Instituto Nacional de Estadística y Censo",
+                "hrefStatic" : "https://www.inec.gob.pa/publicaciones/Default.aspx",
+                "hrefDynamic" : "https://www.inec.gob.pa/publicaciones/Default2.aspx?ID_CATEGORIA=4&ID_SUBCATEGORIA=26"
+            },
+            {
+                "flarID": "1.11.1",
+                "serieName" : "Tasa de desempleo",
+                "serieFreq" : "Quarterly",
+                "serieType" : "",
+                "serieCurrency" : "Local",
+                "serieMultiplicator" : "",
+                "sourceID" : "INEC",
+                "sourceName" : "Instituto Nacional de Estadística y Censo",
+                "hrefStatic" : "https://www.inec.gob.pa/publicaciones/Default.aspx",
+                "hrefDynamic" : "https://www.inec.gob.pa/publicaciones/Default3.aspx?ID_PUBLICACION=1106&ID_CATEGORIA=5&ID_SUBCATEGORIA=38"
+            }
+        ],
+
+        "PER" : [
+            {
+                "flarID": "1.01.1",
+                "serieName" : "Producto Bruto Interno",
+                "serieFreq" : "Quarterly",
+                "serieType" : "",
+                "serieCurrency" : "Local",
+                "serieMultiplicator" : "",
+                "sourceID" : "INEI",
+                "sourceName" : "Instituto Nacional de Estadística e Informática",
+                "hrefStatic" : "https://www.inei.gob.pe/",
+                "hrefDynamic" : "https://www.inei.gob.pe/estadisticas/indice-tematico/economia/"
+            },
+            {
+                "flarID": "1.11.1",
+                "serieName" : "Tasa de desempleo",
+                "serieFreq" : "Monthly",
+                "serieType" : "",
+                "serieCurrency" : "",
+                "serieMultiplicator" : "",
+                "sourceID" : "BCRP",
+                "sourceName" : "Banco Central de Reserva del Perú",
+                "hrefStatic" : "https://www.bcrp.gob.pe/",
+                "hrefDynamic" : "https://estadisticas.bcrp.gob.pe/estadisticas/series/mensuales/resultados/PN38063GM/html"
+            }
+        ],
+
+        "PRY" : [
+            {
+                "flarID": "1.01.1",
+                "serieName" : "Producto interno bruto trimestral",
+                "serieFreq" : "Quarterly",
+                "serieType" : "",
+                "serieCurrency" : "Local",
+                "serieMultiplicator" : "",
+                "sourceID" : "BCP",
+                "sourceName" : "Banco Central de Paraguay",
+                "hrefStatic" : "https://www.bcp.gov.py/inicio",
+                "hrefDynamic" : "https://www.bcp.gov.py/anexo-estadistico-del-informe-economico-i365"
+            },
+            {
+                "flarID": "1.11.1",
+                "serieName" : "Producto Interno Bruto Trimestral",
+                "serieFreq" : "Monthly",
+                "serieType" : "",
+                "serieCurrency" : "",
+                "serieMultiplicator" : "",
+                "sourceID" : "INE",
+                "sourceName" : "Instituto Nacional de Estadística",
+                "hrefStatic" : "https://www.ine.gov.py/",
+                "hrefDynamic" : "https://www.ine.gov.py/default.php?publicacion=3"
+            }
+        ],
+
+        "SLV" : [
+            {
+                "flarID": "1.01.1",
+                "serieName" : "PIB T. Indices de Volumen Encadenados",
+                "serieFreq" : "Quarterly",
+                "serieType" : "",
+                "serieCurrency" : "Local",
+                "serieMultiplicator" : "",
+                "sourceID" : "BCR",
+                "sourceName" : "Banco Central de Reserva de El Salvador",
+                "hrefStatic" : "https://www.bcr.gob.sv/",
+                "hrefDynamic" : "https://www.bcr.gob.sv/bcrsite/?cat=1000&lang=es"
+            },
+            {
+                "flarID": "1.11.1",
+                "serieName" : "Desocupados",
+                "serieFreq" : "Annual",
+                "serieType" : "",
+                "serieCurrency" : "",
+                "serieMultiplicator" : "",
+                "sourceID" : "SISNEE",
+                "sourceName" : "Sistema Nacional de Estadísticas de Empleo",
+                "hrefStatic" : "http://aplicaciones.digestyc.gob.sv/estadisticas.empleo/estadisticas_empleo/index.aspx",
+                "hrefDynamic" : "http://aplicaciones.digestyc.gob.sv/estadisticas.empleo/estadisticas_empleo/index.aspx"
+            }
+        ],
+
+        "URY" : [
+            {
+                "flarID": "1.01.1",
+                "serieName" : "PIB T. Indices de Volumen Encadenados",
+                "serieFreq" : "Quarterly",
+                "serieType" : "",
+                "serieCurrency" : "Local",
+                "serieMultiplicator" : "",
+                "sourceID" : "BCU",
+                "sourceName" : "Banco Central del Uruguay",
+                "hrefStatic" : "https://www.bcu.gub.uy/Paginas/Default.aspx",
+                "hrefDynamic" : "https://www.bcu.gub.uy/Estadisticas-e-Indicadores/Paginas/Series-Estadisticas-del-PIB-por-industrias.aspx"
+            },
+            {
+                "flarID": "1.11.1",
+                "serieName" : "Tasa de actividad, desempleo y empleo por sexo",
+                "serieFreq" : "Monthly",
+                "serieType" : "",
+                "serieCurrency" : "",
+                "serieMultiplicator" : "",
+                "sourceID" : "INE",
+                "sourceName" : "Intituto Nacional de Estadística",
+                "hrefStatic" : "https://www.ine.gub.uy/inicio",
+                "hrefDynamic" : "https://www.ine.gub.uy/web/guest/actividad-empleo-y-desempleo"
+            }
+        ],
+
+        "VEN" : [
+            {
+                "flarID": "1.01.1",
+                "serieName" : "PIB T. Indices de Volumen Encadenados",
+                "serieFreq" : "Quarterly",
+                "serieType" : "",
+                "serieCurrency" : "Local",
+                "serieMultiplicator" : "",
+                "sourceID" : "BCU",
+                "sourceName" : "Banco Central del Uruguay",
+                "hrefStatic" : "https://www.bcu.gub.uy/Paginas/Default.aspx",
+                "hrefDynamic" : "https://www.bcu.gub.uy/Estadisticas-e-Indicadores/Paginas/Series-Estadisticas-del-PIB-por-industrias.aspx"
+            },
+            {
+                "flarID": "1.11.1",
+                "serieName" : "Tasa de actividad, desempleo y empleo por sexo",
+                "serieFreq" : "Monthly",
+                "serieType" : "",
+                "serieCurrency" : "",
+                "serieMultiplicator" : "",
+                "sourceID" : "INE",
+                "sourceName" : "Intituto Nacional de Estadística",
+                "hrefStatic" : "https://www.ine.gub.uy/inicio",
+                "hrefDynamic" : "https://www.ine.gub.uy/web/guest/actividad-empleo-y-desempleo"
+            }
+        ]
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "SECTOR_REAL" : [
+        {
+            "flarID" : "1.01.1",
+            "fmiID" : "",
+            "indicatorName" : "",
+            "indicatorDesc" : "",
+            "indicatorFreq" : ""
+        },
+        {
+            "flarID" : "1.11.1",
+            "fmiID" : "",
+            "indicatorName": "",
+            "indicatorDesc" : "",
+            "indicatorFreq" : ""
+        }
+    
+    
+    ]
+}
