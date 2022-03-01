@@ -61,4 +61,4 @@ def create_directories(storage_path):
                 pass
     
     
-create_directories("D:/Documents/Miguel/FLAR/SIE")
+create_directories("D:/Desktop")

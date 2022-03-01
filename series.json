@@ -24,6 +24,30 @@
                 "sourceName" : "Instituto Nacional de Estadística y Censos",
                 "hrefStatic" : "https://www.indec.gob.ar/",
                 "hrefDynamic" : "https://www.indec.gob.ar/indec/web/Nivel4-Tema-4-31-58"
+            },
+            {
+                "flarID": "1.17.1",
+                "serieName" : "Indice de precios al consumidor",
+                "serieFreq" : "Monthly",
+                "serieType" : "",
+                "serieCurrency" : "",
+                "serieMultiplicator" : "",
+                "sourceID" : "INDEC",
+                "sourceName" : "Instituto Nacional de Estadística y Censos",
+                "hrefStatic" : "https://www.indec.gob.ar/",
+                "hrefDynamic" : "https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-5-31"
+            },
+            {
+                "flarID": "1.22.1",
+                "serieName" : "Indice de actividad económica",
+                "serieFreq" : "Monthly",
+                "serieType" : "",
+                "serieCurrency" : "",
+                "serieMultiplicator" : "",
+                "sourceID" : "INDEC",
+                "sourceName" : "Instituto Nacional de Estadística y Censos",
+                "hrefStatic" : "https://www.indec.gob.ar/",
+                "hrefDynamic" : "https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-9-48"
             }
         ],
 
@@ -51,6 +75,30 @@
                 "sourceName" : "Instituto Nacional de Estadística",
                 "hrefStatic" : "https://www.ine.gob.bo/",
                 "hrefDynamic" : "https://www.ine.gob.bo/index.php/desocupacion/"
+            },
+            {
+                "flarID": "1.17.1",
+                "serieName" : "Indice de precios al consumidor",
+                "serieFreq" : "Annual",
+                "serieType" : "",
+                "serieCurrency" : "",
+                "serieMultiplicator" : "",
+                "sourceID" : "INE",
+                "sourceName" : "Instituto Nacional de Estadística",
+                "hrefStatic" : "https://www.ine.gob.bo/",
+                "hrefDynamic" : "https://www.ine.gob.bo/index.php/nacional/"
+            },
+            {
+                "flarID": "1.22.1",
+                "serieName" : "Indice de actividad económica",
+                "serieFreq" : "Monthly",
+                "serieType" : "",
+                "serieCurrency" : "",
+                "serieMultiplicator" : "",
+                "sourceID" : "INE",
+                "sourceName" : "Instituto Nacional de Estadística",
+                "hrefStatic" : "https://www.ine.gob.bo/",
+                "hrefDynamic" : "https://www.ine.gob.bo/index.php/nacional/"
             }
         ], 
 
@@ -78,6 +126,30 @@
                 "sourceName" : "Instituto Brasileiro de Geografia e Estatística",
                 "hrefStatic" : "https://www.ibge.gov.br/pt/inicio.html",
                 "hrefDynamic" : "https://www.ibge.gov.br/estatisticas/sociais/trabalho/9171-pesquisa-nacional-por-amostra-de-domicilios-continua-mensal.html?=&t=series-historicas"
+            },
+            {
+                "flarID": "1.17.1",
+                "serieName" : "IPCA",
+                "serieFreq" : "Monthly",
+                "serieType" : "",
+                "serieCurrency" : "",
+                "serieMultiplicator" : "",
+                "sourceID" : "SIDRA",
+                "sourceName" : "sistema de recuperacao Automática",
+                "hrefStatic" : "https://sidra.ibge.gov.br/home/pimpfbr/brasil",
+                "hrefDynamic" : "https://sidra.ibge.gov.br/tabela/1737"
+            },
+            {
+                "flarID": "1.22.1",
+                "serieName" : "Indice de Atividade Econômica do Banco Central",
+                "serieFreq" : "Monthly",
+                "serieType" : "",
+                "serieCurrency" : "",
+                "serieMultiplicator" : "",
+                "sourceID" : "BCB",
+                "sourceName" : "Banco Central du Brasil",
+                "hrefStatic" : "https://www3.bcb.gov.br/sgspub/consultarvalores/telaCvsSelecionarSeries.paint",
+                "hrefDynamic" : "https://www3.bcb.gov.br/sgspub/consultarvalores/consultarValoresSeries.do?method=consultarValores"
             }
         ],
 
@@ -105,6 +177,30 @@
                 "sourceName" : "Banco Central de Chile",
                 "hrefStatic" : "https://si3.bcentral.cl/Siete",
                 "hrefDynamic" : "https://si3.bcentral.cl/Siete/ES/Siete/Cuadro/CAP_CCNN/MN_CCNN76/CCNN2013_P0_V2"
+            },
+            {
+                "flarID": "1.17.1",
+                "serieName" : "Indice de Precios al Consumidor (IPC)",
+                "serieFreq" : "Monthly",
+                "serieType" : "",
+                "serieCurrency" : "",
+                "serieMultiplicator" : "",
+                "sourceID" : "INE",
+                "sourceName" : "Instituto Nacional de Estadística",
+                "hrefStatic" : "https://www.ine.cl/",
+                "hrefDynamic" : "https://www.ine.cl/estadisticas/economia/indices-de-precio-e-inflacion/indice-de-precios-al-consumidor"
+            },
+            {
+                "flarID": "1.22.1",
+                "serieName" : "El Indice Mensual de Actividad Económica ",
+                "serieFreq" : "Monthly",
+                "serieType" : "",
+                "serieCurrency" : "",
+                "serieMultiplicator" : "",
+                "sourceID" : "Banco Central de Chile",
+                "sourceName" : "Banco Central de Chile",
+                "hrefStatic" : "https://si3.bcentral.cl/Siete",
+                "hrefDynamic" : "https://www.bcentral.cl/web/banco-central/areas/estadisticas/imacec"
             }
         ],
 
@@ -132,6 +228,30 @@
                 "sourceName" : "Departamento Administrativo Nacional de Estadística",
                 "hrefStatic" : "https://www.dane.gov.co/index.php",
                 "hrefDynamic" : "https://www.dane.gov.co/index.php/estadisticas-por-tema/mercado-laboral/empleo-y-desempleo"
+            },
+            {
+                "flarID": "1.17.1",
+                "serieName" : "Indice de precios al consumidor (IPC)",
+                "serieFreq" : "Monthly",
+                "serieType" : "",
+                "serieCurrency" : "",
+                "serieMultiplicator" : "",
+                "sourceID" : "BANREP",
+                "sourceName" : "Banco de la República de Colombia",
+                "hrefStatic" : "https://www.banrep.gov.co/",
+                "hrefDynamic" : "https://www.banrep.gov.co/es/estadisticas/indice-precios-consumidor-ipc"
+            },
+            {
+                "flarID": "1.22.1",
+                "serieName" : "Indicador de Seguimiento a la Economía",
+                "serieFreq" : "Monthly",
+                "serieType" : "",
+                "serieCurrency" : "",
+                "serieMultiplicator" : "",
+                "sourceID" : "DANE",
+                "sourceName" : "Departamento Administrativo Nacional de Estadística",
+                "hrefStatic" : "https://www.dane.gov.co/index.php",
+                "hrefDynamic" : "https://www.dane.gov.co/index.php/estadisticas-por-tema/cuentas-nacionales/indicador-de-seguimiento-a-la-economia-ise"
             }
         ],
 
@@ -159,6 +279,30 @@
                 "sourceName" : "Banco Central de Costa Rica",
                 "hrefStatic" : "https://www.bccr.fi.cr/SitePages/Inicio.aspx",
                 "hrefDynamic" : "https://gee.bccr.fi.cr/indicadoreseconomicos/Cuadros/frmVerCatCuadro.aspx?idioma=1&CodCuadro=%205504"
+            },
+            {
+                "flarID": "1.17.1",
+                "serieName" : "Indice de precios al consumidor (IPC)",
+                "serieFreq" : "Monthly",
+                "serieType" : "",
+                "serieCurrency" : "",
+                "serieMultiplicator" : "",
+                "sourceID" : "BCCR",
+                "sourceName" : "Banco Central de Costa Rica",
+                "hrefStatic" : "https://www.bccr.fi.cr/SitePages/Inicio.aspx",
+                "hrefDynamic" : "https://gee.bccr.fi.cr/indicadoreseconomicos/Cuadros/frmVerCatCuadro.aspx?idioma=1&CodCuadro=%202732"
+            },
+            {
+                "flarID": "1.22.1",
+                "serieName" : "Indice mensual de actividad económica",
+                "serieFreq" : "Monthly",
+                "serieType" : "",
+                "serieCurrency" : "",
+                "serieMultiplicator" : "",
+                "sourceID" : "BCCR",
+                "sourceName" : "Banco Central de Costa Rica",
+                "hrefStatic" : "https://www.bccr.fi.cr/SitePages/Inicio.aspx",
+                "hrefDynamic" : "https://gee.bccr.fi.cr/indicadoreseconomicos/Cuadros/frmVerCatCuadro.aspx?idioma=1&CodCuadro=%205911"
             }
         ],
 
@@ -173,7 +317,8 @@
                 "sourceID" : "Banco Central de RD",
                 "sourceName" : "Banco Central de República Dominicana",
                 "hrefStatic" : "https://www.bancentral.gov.do/",
-                "hrefDynamic" : "https://www.bancentral.gov.do/a/d/2533-sector-real"},
+                "hrefDynamic" : "https://www.bancentral.gov.do/a/d/2533-sector-real"
+            },
             {
                 "flarID": "1.11.1",
                 "serieName" : "GEIH - Tasa de Desempleo",
@@ -185,6 +330,18 @@
                 "sourceName" : "Banco Central de República Dominicana",
                 "hrefStatic" : "https://www.bancentral.gov.do/",
                 "hrefDynamic" : "https://www.bancentral.gov.do/a/d/2541-encuesta-continua-encft"
+            },
+            {
+                "flarID": "1.17.1",
+                "serieName" : "Indice de precios al consumidor Nacional (IPC)",
+                "serieFreq" : "Monthly",
+                "serieType" : "",
+                "serieCurrency" : "",
+                "serieMultiplicator" : "",
+                "sourceID" : "Banco Central de RD",
+                "sourceName" : "Banco Central de República Dominicana",
+                "hrefStatic" : "https://www.bancentral.gov.do/",
+                "hrefDynamic" : "https://www.bancentral.gov.do/a/d/2534-precios"
             }
         ],
 
@@ -204,6 +361,18 @@
             {
                 "flarID": "",
                 "serieName" : "",
+                "serieFreq" : "",
+                "serieType" : "",
+                "serieCurrency" : "",
+                "serieMultiplicator" : "",
+                "sourceID" : "",
+                "sourceName" : "",
+                "hrefStatic" : "",
+                "hrefDynamic" : ""
+            },
+            {
+                "flarID": "1.17.1",
+                "serieName" : "Indice de precios al consumidor (IPC)",
                 "serieFreq" : "",
                 "serieType" : "",
                 "serieCurrency" : "",
@@ -239,6 +408,18 @@
                 "sourceName" : "Banco de Guatemala",
                 "hrefStatic" : "https://www.banguat.gob.gt/",
                 "hrefDynamic" : "https://www.ine.gob.gt/ine/encuesta-nacional-de-empleo-e-ingresos/"
+            },
+            {
+                "flarID": "1.17.1",
+                "serieName" : "Indice de precios al consumidor (IPC)",
+                "serieFreq" : "Monthly",
+                "serieType" : "",
+                "serieCurrency" : "",
+                "serieMultiplicator" : "",
+                "sourceID" : "BANGUAT",
+                "sourceName" : "Banco de Guatemala",
+                "hrefStatic" : "https://www.banguat.gob.gt/",
+                "hrefDynamic" : "http://www.banguat.gob.gt/inc/ver.asp?id=/estaeco/sr/sr005"
             }
         ],
 
@@ -320,6 +501,30 @@
                 "sourceName" : "Instituto Nacional de Estadística y Geografía",
                 "hrefStatic" : "https://www.inegi.org.mx/",
                 "hrefDynamic" : "https://www.inegi.org.mx/temas/empleo/"
+            },
+            {
+                "flarID": "1.17.1",
+                "serieName" : "Indice de precios al consumidor (IPC)",
+                "serieFreq" : "Monthly",
+                "serieType" : "",
+                "serieCurrency" : "",
+                "serieMultiplicator" : "",
+                "sourceID" : "INEGI",
+                "sourceName" : "Instituto Nacional de Estadística y Geografía",
+                "hrefStatic" : "https://www.inegi.org.mx/",
+                "hrefDynamic" : "https://www.inegi.org.mx/app/indicesdeprecios/Estructura.aspx?idEstructura=112001300020&T=%C3%8Dndices%20de%20Precios%20al%20Consumidor&ST=Principales%20%C3%ADndices%20(mensual)"
+            },
+            {
+                "flarID": "1.22.1",
+                "serieName" : "Indicador global de la actividad económica",
+                "serieFreq" : "Monthly",
+                "serieType" : "",
+                "serieCurrency" : "",
+                "serieMultiplicator" : "",
+                "sourceID" : "INEGI",
+                "sourceName" : "Instituto Nacional de Estadística y Geografía",
+                "hrefStatic" : "https://www.inegi.org.mx/",
+                "hrefDynamic" : "https://www.inegi.org.mx/app/tabulados/default.aspx?pr=10&vr=33&in=1&tp=20&wr=1&cno=2"
             }
         ],
 
@@ -347,6 +552,18 @@
                 "sourceName" : "Banco Central de Nicaragua",
                 "hrefStatic" : "https://www.bcn.gob.ni/",
                 "hrefDynamic" : ""
+            },
+            {
+                "flarID": "1.17.1",
+                "serieName" : "Indice de precios al consumidor (IPC)",
+                "serieFreq" : "Monthly",
+                "serieType" : "",
+                "serieCurrency" : "",
+                "serieMultiplicator" : "",
+                "sourceID" : "INIDE",
+                "sourceName" : "Intituto Nacional de Información de Desarrollo",
+                "hrefStatic" : "https://www.inide.gob.ni/",
+                "hrefDynamic" : "https://www.inide.gob.ni/Home/ipc"
             }
         ],
 
@@ -374,6 +591,18 @@
                 "sourceName" : "Instituto Nacional de Estadística y Censo",
                 "hrefStatic" : "https://www.inec.gob.pa/publicaciones/Default.aspx",
                 "hrefDynamic" : "https://www.inec.gob.pa/publicaciones/Default3.aspx?ID_PUBLICACION=1106&ID_CATEGORIA=5&ID_SUBCATEGORIA=38"
+            },
+            {
+                "flarID": "1.17.1",
+                "serieName" : "Indice de precios al consumidor (IPC)",
+                "serieFreq" : "Monthly",
+                "serieType" : "",
+                "serieCurrency" : "Local",
+                "serieMultiplicator" : "",
+                "sourceID" : "FMI-IFS",
+                "sourceName" : "Fondo Monteario Internacional",
+                "hrefStatic" : "https://data.imf.org/?sk=4c514d48-b6ba-49ed-8ab9-52b0c1a0179b&sId=1390030341854",
+                "hrefDynamic" : "https://data.imf.org/?sk=4c514d48-b6ba-49ed-8ab9-52b0c1a0179b&sId=1390030341854"
             }
         ],
 
@@ -401,6 +630,30 @@
                 "sourceName" : "Banco Central de Reserva del Perú",
                 "hrefStatic" : "https://www.bcrp.gob.pe/",
                 "hrefDynamic" : "https://estadisticas.bcrp.gob.pe/estadisticas/series/mensuales/resultados/PN38063GM/html"
+            },
+            {
+                "flarID": "1.17.1",
+                "serieName" : "Indice de precios al consumidor (IPC) PN01270PM",
+                "serieFreq" : "Monthly",
+                "serieType" : "",
+                "serieCurrency" : "",
+                "serieMultiplicator" : "",
+                "sourceID" : "BCRP",
+                "sourceName" : "Banco Central de Reserva del Perú",
+                "hrefStatic" : "https://www.bcrp.gob.pe/",
+                "hrefDynamic" : "https://estadisticas.bcrp.gob.pe/estadisticas/series/mensuales/inflacion"
+            },
+            {
+                "flarID": "1.22.1",
+                "serieName" : "Indicador global de la actividad económica",
+                "serieFreq" : "Monthly",
+                "serieType" : "",
+                "serieCurrency" : "",
+                "serieMultiplicator" : "",
+                "sourceID" : "INEI",
+                "sourceName" : "Instituto Nacional de Estadística e Informática",
+                "hrefStatic" : "https://www.inei.gob.pe/",
+                "hrefDynamic" : ""
             }
         ],
 
@@ -428,6 +681,30 @@
                 "sourceName" : "Instituto Nacional de Estadística",
                 "hrefStatic" : "https://www.ine.gov.py/",
                 "hrefDynamic" : "https://www.ine.gov.py/default.php?publicacion=3"
+            },
+            {
+                "flarID": "1.17.1",
+                "serieName" : "Indice de precios al consumidor (IPC)",
+                "serieFreq" : "Monthly",
+                "serieType" : "",
+                "serieCurrency" : "",
+                "serieMultiplicator" : "",
+                "sourceID" : "BCP",
+                "sourceName" : "Banco Central de Paraguay",
+                "hrefStatic" : "https://www.bcp.gov.py/inicio",
+                "hrefDynamic" : "https://www.bcp.gov.py/anexo-estadistico-del-informe-economico-i365"
+            },
+            {
+                "flarID": "1.22.1",
+                "serieName" : "Indicador de la actividad económica",
+                "serieFreq" : "Monthly",
+                "serieType" : "",
+                "serieCurrency" : "",
+                "serieMultiplicator" : "",
+                "sourceID" : "BCP",
+                "sourceName" : "Banco Central de Paraguay",
+                "hrefStatic" : "https://www.bcp.gov.py/inicio",
+                "hrefDynamic" : "https://www.bcp.gov.py/anexo-estadistico-del-informe-economico-i365"
             }
         ],
 
@@ -455,6 +732,18 @@
                 "sourceName" : "Sistema Nacional de Estadísticas de Empleo",
                 "hrefStatic" : "http://aplicaciones.digestyc.gob.sv/estadisticas.empleo/estadisticas_empleo/index.aspx",
                 "hrefDynamic" : "http://aplicaciones.digestyc.gob.sv/estadisticas.empleo/estadisticas_empleo/index.aspx"
+            },
+            {
+                "flarID": "1.17.1",
+                "serieName" : "Indice de precios al consumidor (IPC)",
+                "serieFreq" : "Monthly",
+                "serieType" : "",
+                "serieCurrency" : "",
+                "serieMultiplicator" : "",
+                "sourceID" : "BCR",
+                "sourceName" : "Banco Central de Reserva de El Salvador",
+                "hrefStatic" : "https://www.bcr.gob.sv/",
+                "hrefDynamic" : "https://www.bcr.gob.sv/bcrsite/?cdr=123&lang=es"
             }
         ],
 
@@ -482,6 +771,18 @@
                 "sourceName" : "Intituto Nacional de Estadística",
                 "hrefStatic" : "https://www.ine.gub.uy/inicio",
                 "hrefDynamic" : "https://www.ine.gub.uy/web/guest/actividad-empleo-y-desempleo"
+            },
+            {
+                "flarID": "1.17.1",
+                "serieName" : "Indice de precios al consumidor (IPC)",
+                "serieFreq" : "Monthly",
+                "serieType" : "",
+                "serieCurrency" : "",
+                "serieMultiplicator" : "",
+                "sourceID" : "INE",
+                "sourceName" : "Intituto Nacional de Estadística",
+                "hrefStatic" : "https://www.ine.gub.uy/inicio",
+                "hrefDynamic" : "https://www.ine.gub.uy/web/guest/ipc-indice-de-precios-del-consumo"
             }
         ],
 

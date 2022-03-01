@@ -51,5 +51,5 @@ def e1_11_1(playwright,download_path) -> None:
 from playwright.sync_api import sync_playwright
 
 with sync_playwright() as playwright:
-    e1_01_1(playwright, download_path="D:/Documents/Miguel/FLAR/SIE/EXTRACT/SECTOR_REAL/SLV")
-    e1_11_1(playwright, download_path="D:/Documents/Miguel/FLAR/SIE/EXTRACT/SECTOR_REAL/SLV")
+    e1_01_1(playwright, download_path="D:/Documents/Miguel/FLAR/SIE/EXTRACT/SECTOR_REAL/URY")
+    e1_11_1(playwright, download_path="D:/Documents/Miguel/FLAR/SIE/EXTRACT/SECTOR_REAL/URY")
