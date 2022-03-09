@@ -3,13 +3,10 @@ from prefect import task, Flow, Parameter
 import json
 import sys
 
-from extract import *
-from transform import *
-# from SECTOR_REAL.ARG.extract import *
+# from extract import *
+# from transform import *
+from SECTOR_REAL.BOL.extract import *
 # from SECTOR_REAL.ARG.transform  import clean
-
-from playwright.sync_api import sync_playwright
-
 
 
 settings = json.load(open('./settings.json','r'))
@@ -25,8 +22,4 @@ def bolFlow():
         fn1_11_1 = e1_11_1v(download_path=download_path)
         fn1_17_1 = e1_17_1(download_path=download_path)
 
-    flow.run()
-
-
-
-bolFlow()
+    flow.register(project_name="FLAR prueba")

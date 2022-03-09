@@ -62,7 +62,6 @@ def e1_01_1v(download_path) -> None:
         return download.suggested_filename
 
 @task(name="ARG-1_11_1",log_stdout=True, max_retries=3,retry_delay=datetime.timedelta(seconds=10))
-@task(log_stdout=True)
 def e1_11_1v(download_path) -> None:
     with sync_playwright() as playwright:
         browser = playwright.chromium.launch(headless=True)
@@ -159,7 +158,7 @@ def e1_17_1(download_path) -> None:
 
 
 @task(name="ARG-1_22_1",log_stdout=True, max_retries=3,retry_delay=datetime.timedelta(seconds=10))
-def e1_17_1(download_path) -> None:
+def e1_22_1(download_path) -> None:
     pass
 
 

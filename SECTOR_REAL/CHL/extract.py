@@ -73,7 +73,7 @@ def e1_01_1(download_path) -> None:
 # 1.11.1 Desempleo
 
 @task(name="CHL-1_11_1",log_stdout=True, max_retries=3,retry_delay=datetime.timedelta(seconds=10))
-def e1_11_1(playwright,download_path) -> None:
+def e1_11_1(download_path) -> None:
     with sync_playwright() as playwright:
         browser = playwright.chromium.launch(headless=True)
         context = browser.new_context()
@@ -82,8 +82,7 @@ def e1_11_1(playwright,download_path) -> None:
         page = context.new_page()
 
         # Go to https://si3.bcentral.cl/Siete
-        hrefStatic = [i['hrefStatic'] for i in series if i['flarID']=="1.11.1"]
-        page.goto(hrefStatic[0])
+        page.goto('https://si3.bcentral.cl/Siete')
         # page.goto("https://si3.bcentral.cl/Siete")
 
         # Click text=Fuerza de trabajo, empleo y desocupación, remuneraciones y demografía. Ver más >> a
