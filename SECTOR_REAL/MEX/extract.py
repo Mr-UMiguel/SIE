@@ -3,7 +3,7 @@ import datetime
 import time
 from playwright.sync_api import sync_playwright 
 
-@task(name="MEX-1_01_1",log_stdout=True, max_retries=3,retry_delay=datetime.timedelta(seconds=10))
+@task(name="MEX-1_01_1",log_stdout=True, max_retries=2,retry_delay=datetime.timedelta(seconds=2))
 def e1_01_1(download_path) -> None:
     with sync_playwright() as playwright:        
         browser = playwright.chromium.launch(headless=True)
@@ -64,7 +64,7 @@ def e1_01_1(download_path) -> None:
 
 
 # 1.11.1 Desempleo
-@task(name="MEX-1_11_1",log_stdout=True, max_retries=3,retry_delay=datetime.timedelta(seconds=10))
+@task(name="MEX-1_11_1",log_stdout=True, max_retries=2,retry_delay=datetime.timedelta(seconds=2))
 def e1_11_1(download_path) -> None:
     with sync_playwright() as playwright:        
         browser = playwright.chromium.launch(headless=True)
@@ -107,29 +107,34 @@ def e1_11_1(download_path) -> None:
         return download.suggested_filename
 
 
-@task(name="MEX-1_17_1",log_stdout=True, max_retries=3,retry_delay=datetime.timedelta(seconds=10))
+@task(name="MEX-1_17_1",log_stdout=True, max_retries=2,retry_delay=datetime.timedelta(seconds=2))
 def e1_17_1(download_path):
     with sync_playwright() as playwright:
         browser = playwright.chromium.launch(headless=False)
-        context = browser.new_context(ignore_https_errors=True, accept_downloads=True)
+        context = browser.new_context(ignore_https_errors=True, accept_downloads=False)
 
         # Open new page
         page = context.new_page()
 
-        page.goto('https://www.inegi.org.mx/app/indicesdeprecios/Estructura.aspx?idEstructura=112001300020&T=%C3%8Dndices%20de%20Precios%20al%20Consumidor&ST=Principales%20%C3%ADndices%20(mensual)')
-        # Click #btn_tablagraf_gral0
-        page.click('//*[@id="PrincipalContainer"]/div/div/div[1]/img[2]')
-        # Click #btn_exportaCSVgraf_gral0
+        page.goto("https://www.inegi.org.mx/app/indicesdeprecios/Estructura.aspx?idEstructura=112001300020")
+        # Click text=Subíndices subyacente y complementarios
+        page.click("text=Subíndices subyacente y complementarios")
+        # Click text=Precios al Consumidor (INPC)
+        page.click("text=Precios al Consumidor (INPC)")
 
-        content = page.locator('//*[@id="Titulo1_Estructura"]/h4').text_content()
-        page.select_option('//*[@id="MainContent_wuc_BarraHerramientas1_ddlAnioI"]','1969')
+        
+        # Click img[alt="Consulta\ las\ series\ selccionadas\ en\ formato\ Excel\ \(XLS\)\."]
+        page.click('img[alt=\"Consulta\\ las\\ series\\ selccionadas\\ en\\ formato\\ Excel\\ \\(XLS\\)\\.\"]')
+        # Select 1969
+        page.select_option('select[name=\"ctl00\\$MainContent\\$wuc_BarraHerramientas1\\$ddlAnioI\"]', "1969")
 
         with page.expect_download() as download_info:
-            page.selector("text=Exportar").click()
+            page.click("text=Exportar")
         download = download_info.value
 
 
         url = page.url
+        content = 'Precios al Consumidor (INPC)'
         
 
 
@@ -149,3 +154,4 @@ def e1_17_1(download_path):
         context.close()
         browser.close()
         return download.suggested_filename
+

@@ -2,7 +2,7 @@ from prefect import task
 import datetime
 from playwright.sync_api import sync_playwright 
 
-@task(name="CHL-1_01_1",log_stdout=True, max_retries=3,retry_delay=datetime.timedelta(seconds=10))
+@task(name="CHL-1_01_1",log_stdout=True, max_retries=2,retry_delay=datetime.timedelta(seconds=2))
 def e1_01_1(download_path) -> None:
     with sync_playwright() as playwright:
         browser = playwright.chromium.launch(headless=True)
@@ -18,12 +18,15 @@ def e1_01_1(download_path) -> None:
         page.click("text=Cuentas Nacionales")
         # assert page.url == "https://si3.bcentral.cl/Siete/ES/Siete/Cuadro/CAP_CCNN/MN_CCNN76/CCNN2013_IMACEC_01"
 
-        # Click text=Producto interno bruto
-        page.click("text=Producto interno bruto")
+        # Click text=Producto Interno Bruto (PIB), gasto e ingreso
+        page.click("text=Producto Interno Bruto (PIB), gasto e ingreso")
+
+        # Click #MN_CCNN76637801081414569736
+        page.click("#MN_CCNN76637801081414569736")
 
         # Click text=PIB total
-        content = page.locator('//*[@id="MN_CCNN76CCNN2013_P0_V2"]').text_content()
-        page.click('//*[@id="MN_CCNN76CCNN2013_P0_V2"]')
+        page.click("text=PIB total")
+
         # assert page.url == "https://si3.bcentral.cl/Siete/ES/Siete/Cuadro/CAP_CCNN/MN_CCNN76/CCNN2013_P0_V2/CCNN2013_P0_V2"
 
         # Check .fixed-columns .fixed-table-body #grilla #tbodyGrid tr:nth-child(2) .nw .chkGrid
@@ -37,6 +40,9 @@ def e1_01_1(download_path) -> None:
 
         # Click #radioExportV
         page.click("#radioExportV")
+
+        # Click text=Vertical
+        page.click("text=Vertical")
 
         # Click #modalExport >> text=Aceptar
         with page.expect_download() as download_info:
@@ -54,13 +60,11 @@ def e1_01_1(download_path) -> None:
         ### NO MODIFCAR ESTA PARTE 
         download.save_as(download_path+f"/{download.suggested_filename}")
 
-
-
         print(f"""
         **********************************
         {url}
         ----------------------------------
-        {content}
+        {"Pib solumen a precios del año anterior encadenado"}
         File has been successfully downloaded 
         {download_path+f"/{download.suggested_filename}"}
         """)
@@ -70,9 +74,10 @@ def e1_01_1(download_path) -> None:
 
         return download.suggested_filename
 
+
 # 1.11.1 Desempleo
 
-@task(name="CHL-1_11_1",log_stdout=True, max_retries=3,retry_delay=datetime.timedelta(seconds=10))
+@task(name="CHL-1_11_1",log_stdout=True, max_retries=2,retry_delay=datetime.timedelta(seconds=2))
 def e1_11_1(download_path) -> None:
     with sync_playwright() as playwright:
         browser = playwright.chromium.launch(headless=True)
@@ -135,7 +140,7 @@ def e1_11_1(download_path) -> None:
 
         return download.suggested_filename
 
-@task(name="CHL-1_17_1",log_stdout=True, max_retries=3,retry_delay=datetime.timedelta(seconds=10))
+@task(name="CHL-1_17_1",log_stdout=True, max_retries=2,retry_delay=datetime.timedelta(seconds=2))
 def e1_17_1(download_path) -> None:
     with sync_playwright() as playwright:
         browser = playwright.chromium.launch(headless=True)
@@ -151,7 +156,7 @@ def e1_17_1(download_path) -> None:
         # Click text=Series empalmadas diciembre 2009 a la fecha
         page.click("text=Series empalmadas diciembre 2009 a la fecha")
         # Click text=Serie Histórica Empalmada IPC Diciembre 2009 a la fecha XLSXLSX, 19.54 KB
-        download_locator = ('text=Serie Histórica Empalmada IPC Diciembre 2009 a la fecha XLSXLSX, 19.54 KB')
+        download_locator = '//*[@id="Content_C007_Col02"]/div/div/div/div[2]/a[1]'
         with page.expect_download() as download_info:
             page.click(download_locator)
         download = download_info.value

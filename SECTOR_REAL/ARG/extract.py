@@ -2,7 +2,7 @@ from prefect import task
 import datetime
 from playwright.sync_api import sync_playwright 
 
-@task(name="ARG-1_01_1",log_stdout=True, max_retries=3,retry_delay=datetime.timedelta(seconds=10))
+@task(name="ARG-1_01_1",log_stdout=True, max_retries=2,retry_delay=datetime.timedelta(seconds=2))
 def e1_01_1v(download_path) -> None:
     """
         PIB REAL ARGENTINA
@@ -61,7 +61,7 @@ def e1_01_1v(download_path) -> None:
         
         return download.suggested_filename
 
-@task(name="ARG-1_11_1",log_stdout=True, max_retries=3,retry_delay=datetime.timedelta(seconds=10))
+@task(name="ARG-1_11_1",log_stdout=True, max_retries=2,retry_delay=datetime.timedelta(seconds=2))
 def e1_11_1v(download_path) -> None:
     with sync_playwright() as playwright:
         browser = playwright.chromium.launch(headless=True)
@@ -119,7 +119,7 @@ def e1_11_1v(download_path) -> None:
         return download.suggested_filename
 
 
-@task(name="ARG-1_17_1",log_stdout=True, max_retries=3,retry_delay=datetime.timedelta(seconds=10))
+@task(name="ARG-1_17_1",log_stdout=True, max_retries=2,retry_delay=datetime.timedelta(seconds=2))
 def e1_17_1(download_path) -> None:
     with sync_playwright() as playwright:
         browser = playwright.chromium.launch(headless=True)

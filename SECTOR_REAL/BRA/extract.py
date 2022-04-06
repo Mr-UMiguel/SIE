@@ -2,7 +2,68 @@ from prefect import task
 import datetime
 from playwright.sync_api import sync_playwright 
 
-@task(name="BRA-1_01_1",log_stdout=True, max_retries=3,retry_delay=datetime.timedelta(seconds=10))
+
+def api(download_path,serieID, start_date):
+    with sync_playwright() as playwright:
+        browser = playwright.chromium.launch(headless=False)
+        context = browser.new_context()
+
+        # Open new page
+        page = context.new_page()
+
+
+        # Go to https://www3.bcb.gov.br/sgspub/consultarvalores/telaCvsSelecionarSeries.paint
+        page.goto("https://www3.bcb.gov.br/sgspub/consultarvalores/telaCvsSelecionarSeries.paint")
+
+        # Go to https://www3.bcb.gov.br/sgspub/localizarseries/localizarSeries.do?method=prepararTelaLocalizarSeries
+        page.goto("https://www3.bcb.gov.br/sgspub/localizarseries/localizarSeries.do?method=prepararTelaLocalizarSeries")
+
+
+        # Fill input[name="codigo"]
+        page.fill("input[name=\"codigo\"]", serieID )
+
+        # Press Enter
+        page.press("input[name=\"codigo\"]", "Enter")
+
+        # Check input[name="cbxSelecionaSerie"]
+        page.frame(name="iCorpo").check("input[name=\"cbxSelecionaSerie\"]")
+
+        # Click input:has-text("Consultar séries")
+        # with page.expect_navigation(url="https://www3.bcb.gov.br/sgspub/consultarvalores/telaCvsSelecionarSeries.paint"):
+        with page.expect_navigation():
+            page.click("input:has-text(\"Consultar séries\")")
+
+
+        # Fill input[name="dataInicio"]
+        page.fill("input[name=\"dataInicio\"]", start_date)
+
+        # Click text=Visualizar valores
+        page.click("text=Visualizar valores")
+        # assert page.url == "https://www3.bcb.gov.br/sgspub/consultarvalores/consultarValoresSeries.do?method=consultarValores"
+
+        # Click text=Arquivo CSV
+        with page.expect_download() as download_info:
+            with page.expect_popup() as popup_info:
+                page.click("text=Arquivo CSV")
+            page1 = popup_info.value
+        download = download_info.value
+
+        # Close page
+        page1.close()
+        #### PARA GUARDAR EL ARCHIVO ###########
+        ### NO MODIFCAR ESTA PARTE 
+        download.save_as(download_path+f"/{download.suggested_filename}")
+        print(f"""
+        **********************************
+        File has been successfully downloaded 
+        {download_path+f"/{download.suggested_filename}"}
+        """)
+        # ---------------------
+        context.close()
+        browser.close()
+        return download.suggested_filename
+
+@task(name="BRA-1_01_1",log_stdout=True, max_retries=2,retry_delay=datetime.timedelta(seconds=2))
 def e1_01_1(download_path) -> None:
     with sync_playwright() as playwright:
         browser = playwright.chromium.launch(headless=True)
@@ -49,7 +110,7 @@ def e1_01_1(download_path) -> None:
 
 
 
-@task(name="BRA-1_11_1",log_stdout=True, max_retries=3,retry_delay=datetime.timedelta(seconds=10))
+@task(name="BRA-1_11_1",log_stdout=True, max_retries=2,retry_delay=datetime.timedelta(seconds=2))
 def e1_11_1(download_path) -> None:
     with sync_playwright() as playwright:
         browser = playwright.chromium.launch(headless=True)
@@ -88,7 +149,7 @@ def e1_11_1(download_path) -> None:
 
         return download.suggested_filename
 
-@task(name="BRA-1_17_1",log_stdout=True, max_retries=3,retry_delay=datetime.timedelta(seconds=10))
+@task(name="BRA-1_17_1",log_stdout=True, max_retries=2,retry_delay=datetime.timedelta(seconds=2))
 def e1_17_1(download_path):
     with sync_playwright() as playwright:
         browser = playwright.chromium.launch(headless=True)
@@ -97,8 +158,8 @@ def e1_17_1(download_path):
 
         page.goto('https://sidra.ibge.gov.br/tabela/1737')
 
-        # Click text=EditorExpandir/reduzir janelaMês [1/506]TudoToggle DropdownTudoMarcadosDesmarcad >> [aria-label="Marcar\ todos\ os\ elementos\ listados"]
-        page.click("text=EditorExpandir/reduzir janelaMês [1/506]TudoToggle DropdownTudoMarcadosDesmarcad >> [aria-label=\"Marcar\\ todos\\ os\\ elementos\\ listados\"]")
+    # Click text=EditorExpandir/reduzir janelaMês [1/507]TudoToggle DropdownTudoMarcadosDesmarcad >> [aria-label="Marcar\ todos\ os\ elementos\ listados"]
+        page.click('//*[@id="panel-P-collapse"]/div[2]/div/div[1]/div[1]/div/button[1]')
         # Click text=Download
         page.click("text=Download")
         # Click strong:has-text("Download")
@@ -130,4 +191,5 @@ def e1_17_1(download_path):
         context.close()
         browser.close()
         return download.suggested_filename
+        
 

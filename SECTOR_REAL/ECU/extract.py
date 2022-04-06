@@ -2,7 +2,7 @@ from prefect import task
 import datetime
 from playwright.sync_api import sync_playwright 
 
-@task(name="ECU-1_01_1",log_stdout=True, max_retries=3,retry_delay=datetime.timedelta(seconds=10))
+@task(name="ECU-1_01_1",log_stdout=True, max_retries=2,retry_delay=datetime.timedelta(seconds=2))
 def e1_01_1(download_path) -> None:
     with sync_playwright() as playwright:
         browser = playwright.chromium.launch(headless=True)
@@ -15,12 +15,12 @@ def e1_01_1(download_path) -> None:
         page.goto("https://contenido.bce.fin.ec/home1/estadisticas/cntrimestral/CNTrimestral.jsp")
         # Click text=Boletín de Cuentas Nacionales Trimestrales No. 117, valores constantes USD 2007
         with page.expect_download() as download_info:
-            page.frame(name="Data").click("text=Boletín de Cuentas Nacionales Trimestrales No. 117, valores constantes USD 2007 ")
+            page.frame(name="Data").click('//*[@id="c112092020_16832"]/table/tbody/tr[5]/td[2]/a')
         download = download_info.value
 
         # assert page.url == "https://www.ine.gob.bo/index.php/estadisticas-economicas/pib-y-cuentas-nacionales/producto-interno-bruto-trimestral/producto-interno-bruto-trimestral-intro/#1604584724125-615aec14-e917"
         url = page.url
-        content = 'Boletín de Cuentas Nacionales Trimestrales No. 117, valores constantes USD 2007 '
+        content = 'BOLETÍN DE CUENTAS NACIONALES TRIMESTRALES'
 
 
         #### PARA GUARDAR EL ARCHIVO ###########
@@ -41,7 +41,11 @@ def e1_01_1(download_path) -> None:
 
         return download.suggested_filename
 
-@task(name="ECU-1_11_1",log_stdout=True, max_retries=3,retry_delay=datetime.timedelta(seconds=10))
+
+
+
+
+@task(name="ECU-1_11_1",log_stdout=True, max_retries=2,retry_delay=datetime.timedelta(seconds=2))
 def e1_11_1(download_path) -> None:
     with sync_playwright() as playwright:
         browser = playwright.chromium.launch(headless=True)
@@ -84,7 +88,7 @@ def e1_11_1(download_path) -> None:
 
         return download.suggested_filename
 
-@task(name="ECU-1_17_1",log_stdout=True, max_retries=3,retry_delay=datetime.timedelta(seconds=10))
+@task(name="ECU-1_17_1",log_stdout=True, max_retries=2,retry_delay=datetime.timedelta(seconds=2))
 def e1_17_1(download_path) -> None:
     with sync_playwright() as playwright:
         browser = playwright.chromium.launch(headless=True)
@@ -95,12 +99,8 @@ def e1_17_1(download_path) -> None:
 
         page.goto("https://www.ecuadorencifras.gob.ec/indice-de-precios-al-consumidor/")
 
-
-        page.click('//*[@id="content-full "]/table[1]/tbody/tr/td[1]/a/img')
-
-
         with page.expect_download() as download_info:
-            page.click('//*[@id="content-main"]/div[3]/table[2]/tbody/tr[2]/td[1]/a/img')
+            page.click('//*[@id="content-main"]/div[3]/table[2]/tbody/tr[2]/td[1]/a')
         download = download_info.value
 
         # assert page.url == "https://www.ine.gob.bo/index.php/estadisticas-economicas/pib-y-cuentas-nacionales/producto-interno-bruto-trimestral/producto-interno-bruto-trimestral-intro/#1604584724125-615aec14-e917"
