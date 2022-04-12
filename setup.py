@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name="ETLFLAR",
-    version="1.2",
+    version="1.3",
     description="""
     ETL-FLAR
     Es un paquete diseñado para el proceso de extracción, transformación y cargar
@@ -22,5 +22,11 @@ setup(
     "SECTOR_REAL.ECU",
     "SECTOR_REAL.GTM",
     "SECTOR_REAL.HND",
-    "SECTOR_REAL.MEX"]
+    "SECTOR_REAL.MEX",
+    "SECTOR_REAL.NIC",
+    "SECTOR_REAL.PAN",
+    "SECTOR_REAL.PER",
+    "SECTOR_REAL.PRY",
+    "SECTOR_REAL.SLV",
+    "SECTOR_REAL.URY"]
 )

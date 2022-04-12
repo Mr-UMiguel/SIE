@@ -1,8 +1,11 @@
 from prefect import task
+from prefect.engine.results import LocalResult
+
 import datetime
 from playwright.sync_api import sync_playwright 
 
-@task(name="ARG-1_01_1",log_stdout=True, max_retries=2,retry_delay=datetime.timedelta(seconds=2))
+@task(name="ARG-1_01_1",log_stdout=True, max_retries=2,retry_delay=datetime.timedelta(seconds=2),
+      result=LocalResult(location="initial_data.prefect"))
 def e1_01_1v(download_path) -> None:
     """
         PIB REAL ARGENTINA
@@ -59,7 +62,7 @@ def e1_01_1v(download_path) -> None:
         context.close()
         browser.close()
         
-        return download.suggested_filename
+    return download.suggested_filename
 
 @task(name="ARG-1_11_1",log_stdout=True, max_retries=2,retry_delay=datetime.timedelta(seconds=2))
 def e1_11_1v(download_path) -> None:

@@ -2,7 +2,7 @@ from prefect import task
 import datetime
 from playwright.sync_api import sync_playwright 
 
-@task(name="GTM-1_01_1",log_stdout=True, max_retries=3,retry_delay=datetime.timedelta(seconds=10))
+@task(name="GTM-1_01_1",log_stdout=True, max_retries=2,retry_delay=datetime.timedelta(seconds=2))
 def e1_01_1(download_path) -> None:
     with sync_playwright() as playwright:
         browser = playwright.chromium.launch(headless=True)
@@ -50,7 +50,7 @@ def e1_11_1() -> None:
 
 
 
-@task(name="GTM-1_17_1",log_stdout=True, max_retries=3,retry_delay=datetime.timedelta(seconds=10))
+@task(name="GTM-1_17_1",log_stdout=True, max_retries=2,retry_delay=datetime.timedelta(seconds=2))
 def e1_17_1(download_path) -> None:
     with sync_playwright() as playwright:
         browser = playwright.chromium.launch(headless=True)
@@ -62,9 +62,8 @@ def e1_17_1(download_path) -> None:
         # Go to https://www.banguat.gob.gt/
         page.goto('http://www.banguat.gob.gt/inc/ver.asp?id=/estaeco/sr/sr005')
 
-        download_locator = '//*[@id="tit"]/table/tbody/tr[1]/td/table/tbody/tr/td[3]/a'
         with page.expect_download() as download_info:
-            page.click(download_locator)
+            page.click('//*[@id="tit"]/table/tbody/tr[1]/td/table/tbody/tr/td[3]/a')
 
         download = download_info.value
 
@@ -89,3 +88,4 @@ def e1_17_1(download_path) -> None:
         browser.close()
 
         return download.suggested_filename
+
