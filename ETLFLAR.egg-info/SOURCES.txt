@@ -14,6 +14,7 @@ SECTOR_REAL/ARG/flow.py
 SECTOR_REAL/BOL/__init__.py
 SECTOR_REAL/BOL/extract.py
 SECTOR_REAL/BOL/flow.py
+SECTOR_REAL/BOL/renameFiles.py
 SECTOR_REAL/BRA/__init__.py
 SECTOR_REAL/BRA/extract.py
 SECTOR_REAL/BRA/flow.py

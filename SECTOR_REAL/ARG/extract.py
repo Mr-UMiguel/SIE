@@ -4,8 +4,7 @@ from prefect.engine.results import LocalResult
 import datetime
 from playwright.sync_api import sync_playwright 
 
-@task(name="ARG-1_01_1",log_stdout=True, max_retries=2,retry_delay=datetime.timedelta(seconds=2),
-      result=LocalResult(location="initial_data.prefect"))
+@task(name="ARG-1_01_1",log_stdout=True, max_retries=2,retry_delay=datetime.timedelta(seconds=2),result=LocalResult(location="initial_data.prefect"))
 def e1_01_1v(download_path) -> None:
     """
         PIB REAL ARGENTINA
