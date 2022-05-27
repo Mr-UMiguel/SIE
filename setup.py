@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
     name="ETLFLAR",
@@ -11,22 +11,5 @@ setup(
     author="Miguel",
     author_email="",
     url="",
-    packages= ["SECTOR_REAL",
-    "SECTOR_REAL.ARG",
-    "SECTOR_REAL.BOL",
-    "SECTOR_REAL.BRA",
-    "SECTOR_REAL.CHL",
-    "SECTOR_REAL.COL",
-    "SECTOR_REAL.CRI",
-    "SECTOR_REAL.DOM",
-    "SECTOR_REAL.ECU",
-    "SECTOR_REAL.GTM",
-    "SECTOR_REAL.HND",
-    "SECTOR_REAL.MEX",
-    "SECTOR_REAL.NIC",
-    "SECTOR_REAL.PAN",
-    "SECTOR_REAL.PER",
-    "SECTOR_REAL.PRY",
-    "SECTOR_REAL.SLV",
-    "SECTOR_REAL.URY"]
+    packages= find_packages(),
 )

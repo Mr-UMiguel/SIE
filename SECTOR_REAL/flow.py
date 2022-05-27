@@ -1,46 +1,55 @@
-from prefect import Task, Flow, Parameter
+from prefect import Task, Flow, Parameter, task
 from prefect.engine.flow_runner import FlowRunner
 from prefect.executors import LocalExecutor
+import json
 
-from ARG.transform import *
 class Extract(Task):
 
     def __init__(self,function,*args,**kargs):
         self.function = function
+        self.download_path = kargs['download_path']
         super().__init__()
 
     def run(self):
-        r = self.function()
-        return r
-
+        r = self.function(download_path=self.download_path)
+        with open('./test-serie.json','r+') as f:
+            data = json.load(f)
+            data['file_name'] = r
+            f.seek(0)
+            json.dump(data,f,indent=4)
+            f.truncate()
+        
+        
 
 class Transform(Task):
 
-    def __init__(self,extract,*args,**kargs):
-        self.__extract = extract
+    def __init__(self,function,*args,**kargs):
+        self.function = function
+        self.flar_name = kargs['flar_name']
+        self.download_path = kargs['download_path']
+
         super().__init__()
 
     def run(self):
-        flow = Flow("Extract ARG")
-        e = Extract(saludo)
-        flow.add_task(e)
-        state = flow.run()
+        self.fname = json.load(open('./test-serie.json','r'))['file_name']
+        r = self.function(self.fname,self.flar_name,self.download_path)
+        return r
 
-        r = state.result[e].result
-        return r + " OK"
+class Load(Task):
+    def __init__(self,function,*args,**kargs):
+        self.function = function
+        self.state = kargs['state']
+        super().__init__()
+    
+    def run(self):
+        r = self.function(self.state)
+        return r
 
 
 
 
-flow = Flow("testing-example")
 
-e = Extract(saludo)
-t = Transform(e)
-flow.add_edge(upstream_task=e, downstream_task=t)
 
-state = flow.run()
-print(state.result[t].result)
-print(state.result[t].is_successful())
 
 
 

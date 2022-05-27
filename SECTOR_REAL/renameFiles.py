@@ -1,14 +1,16 @@
 import pandas as pd 
 import numpy as np 
 import sys , traceback, os ,shutil
-from prefect import task
 
-@task
-def rename_and_save(filepath,filename,flar_name):
-    shutil.move(f"{filepath}/{filename}",f"{filepath}/{flar_name}")
-    print("File has been renamed and saved in {}".format(filepath + "/" + flar_name))
+def rename_and_save(file_name,flar_name,download_path):
+    """
+    Use esta función para renombrar archivos del tipo .xlsx a .xls o de .xls a .xlsx
+    """
+    data = pd.read_excel(f"{download_path}/{file_name}")
+    data.to_excel(f"{download_path}/{flar_name}")
+    os.remove(f"{download_path}/{file_name}")
+    print("File has been renamed and saved in {}".format(download_path + "/" + flar_name))
 
-@task
 def open_and_save(filepath,filename,flar_name,sheet_name=None):
     if sheet_name is not None:
         try:
