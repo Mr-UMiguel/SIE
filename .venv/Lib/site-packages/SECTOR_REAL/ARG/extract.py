@@ -24,7 +24,6 @@ def _1_01_1(download_path) -> None:
         download = download_info.value
 
 
-
         #### PARA GUARDAR EL ARCHIVO ###########
         ### NO MODIFCAR ESTA PARTE 
         download.save_as(download_path+f"/{download.suggested_filename}")
