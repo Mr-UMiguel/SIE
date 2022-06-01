@@ -10,6 +10,7 @@ SECTOR_REAL/renameFiles.py
 SECTOR_REAL/runMacro.py
 SECTOR_REAL/runmacro.py
 SECTOR_REAL/scheduler.py
+SECTOR_REAL/stateHandlers.py
 SECTOR_REAL/ARG/__init__.py
 SECTOR_REAL/ARG/_flow.py
 SECTOR_REAL/ARG/extract.py
