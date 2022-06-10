@@ -20,12 +20,12 @@ with Flow("1_01_1") as flow:
         flarID = '1.01.1',
         )
     l = Load(
-        update_state=t,
+        update_status=t,
         refAreaID = 'AR',
         flarID = '1.01.1',
         )
 
-flow.schedule = monthCron_scheduler()
+# flow.schedule = monthCron_scheduler()
 flow.register(project_name='AR')
 
 # ### Flow 1_17_1
